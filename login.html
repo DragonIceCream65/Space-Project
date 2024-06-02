@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="icon" href="img/austro (1).png"> 
+    <title>Espacios Con Sebas</title>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="nasa.html"><img src="img/icons8-nasa-48.png" alt="nasa"></a></div>
+            <ul class="links">
+                <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="about.html">Acerca de</a></li>
+                <li><a href="comment.html">Teorías & estudios</a></li>
+                <li><a href="project.html">Comentarios</a></li>
+            </ul>
+            <a href="#" class="action_btn">Iniciar sesión</a>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+        <div class="dropdown_menu">
+            <li><a href="../opcion1/inicio.html">Inicio</a></li>
+                <li><a href="../opcion2/about.html">Acerca de</a></li>
+                <li><a href="../opcion3/comment.html">NASA</a></li>
+                <li><a href="../opcion2/project.html">Comentarios</a></li>
+                <a href="../opcion5/login.html" class="action_btn">Iniciar sesión</a>
+        </div>
+        <section>
+            <div class="form-box">
+                <div class="form-value">
+                    <form action="">
+                        <h2>Login</h2>
+                        <div class="inputbox">
+                            <ion-icon name="mail-outline"></ion-icon>
+                           <input type="text" required>
+                           <label for="">Email</label>
+                        </div>
+                        <div class="inputbox">
+                            <ion-icon name="eye-outline"></ion-icon>
+                            <input type="password" required>
+                            <label for="">Password</label>
+
+                         </div>
+                        <div class="forget">
+                            <label for="">
+                                <input type="checkbox">Remember Me
+                            </label>
+                            <a href="">Forget Password</a>
+                        </div>
+
+                        <button>Log in</button>
+                        <div class="register">
+                            <p>Don't have a account <a href="#">Register</a> </p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </header>
+    <script>
+        const toggleBtn=document.querySelector('.toggle_btn')
+        const toggleBtnIcon=document.querySelector('.toggle_btn i')
+        const dropdownMenu=document.querySelector('.dropdown_menu')
+        toggleBtn.onclick=function(){
+            dropdownMenu.classList.toggle('open')        
+        }
+        const isOpen =dropdownMenu.classList.contains('open')
+
+        toggleBtnIcon.classList =isOpen
+        ?'fa-solid fa-xmark'
+        :'fa-solid fa-bars'
+    </script>
+     <script class="form-box">
+    </script>
+
+</body>
+</html>

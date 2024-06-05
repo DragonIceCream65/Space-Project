@@ -113,8 +113,9 @@ section#hero{
 #hero h1{
     font-size: 3rem;
     margin-bottom: 1rem;
-}
+    min-height: 100vh;
 
+}
 @media(max-width:992px)
 
 {
